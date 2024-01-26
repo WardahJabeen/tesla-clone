@@ -1,10 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { View, Text, ImageBackground, Image, TouchableOpacity } from 'react-native'
 import styles from "./styles"
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
-import { faGear, faToolbox } from '@fortawesome/free-solid-svg-icons'
+import { faGear, faToolbox, faFan, faKey, faLock, faUnlock } from '@fortawesome/free-solid-svg-icons'
 
 const CarItem = () => {
+
+    const [locked, setLocked] = useState(false);
+    const clickLock = () => {
+        if (locked) {
+            setLocked(false);
+        }
+        else {
+            setLocked(true);
+        }
+    }
+
     return (
         // views are like div
         <View style={styles.carContainer}>
@@ -33,6 +44,26 @@ const CarItem = () => {
             {/* status */}
             <View style={styles.status}>
                 <Text style={styles.statusText}>Parked</Text>
+            </View>
+            {/* Control Icons */}
+            <View style={styles.controls}>
+                <TouchableOpacity>
+                    <View style={styles.controlsButton}>
+                        <FontAwesomeIcon style={styles.icon} icon={faFan} size={24} />
+                    </View>
+                </TouchableOpacity>
+                <TouchableOpacity>
+                    <View style={styles.controlsButton}>
+                        <FontAwesomeIcon style={styles.icon} icon={faKey} size={24} />
+                    </View>
+                </TouchableOpacity>
+                <TouchableOpacity
+                    onPress={clickLock}
+                >
+                    <View style={styles.controlsButton}>
+                        <FontAwesomeIcon style={styles.icon} icon={locked ? faLock : faUnlock} size={24} />
+                    </View>
+                </TouchableOpacity>
             </View>
         </View>
     )
