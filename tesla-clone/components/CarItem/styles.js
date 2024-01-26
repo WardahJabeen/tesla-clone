@@ -14,6 +14,22 @@ const styles = StyleSheet.create({
         justifyContent: "space-between",
         alignItems: "center",
     },
+    headerTitle: {
+        color: "white",
+        fontSize: 16,
+        fontWeight: "bold",
+        alignItems: "center",
+        justifyContent: "center",
+    },
+    icon: {
+        color: "white"
+    },
+    backgroundImage: {
+        width: "100%",
+        height: "100%",
+        resizeMode: "cover",
+        position: "absolute", //puts the image behind everything else
+    }
 });
 
 export default styles;
