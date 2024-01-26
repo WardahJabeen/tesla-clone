@@ -20,6 +20,7 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         alignItems: "center",
         justifyContent: "center",
+        marginBottom: 10,
     },
     icon: {
         color: "white"
@@ -29,6 +30,29 @@ const styles = StyleSheet.create({
         height: "100%",
         resizeMode: "cover",
         position: "absolute", //puts the image behind everything else
+    },
+    batterySection: {
+        flexDirection: "row",
+        justifyContent: "center",
+        alignItems: "center",
+    },
+    batteryImage: {
+        height: 26,
+        width: 70,
+        marginRight: 12,
+    },
+    batteryText: {
+        color: "white",
+        fontSize: 35,
+        fontWeight: "bold",
+    },
+    statusText: {
+        fontSize: 20,
+        fontWeight: "bold",
+        color: "white",
+    },
+    status: {
+        alignItems: "center",
     }
 });
 
