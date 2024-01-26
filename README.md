@@ -12,6 +12,9 @@ Open it on Android (need to first run a device in Android Studio by going to Dev
 ## To setup font-awesome (https://www.npmjs.com/package/@fortawesome/react-native-fontawesome):
 
 `$ npm i --save react-native-svg # **`
+
 `$ npm i --save @fortawesome/fontawesome-svg-core`
+
 `$ npm i --save @fortawesome/free-solid-svg-icons`
+
 `$ npm i --save @fortawesome/react-native-fontawesome`
