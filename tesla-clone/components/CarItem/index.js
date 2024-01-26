@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, ImageBackground, Image } from 'react-native'
+import { View, Text, ImageBackground, Image, TouchableOpacity } from 'react-native'
 import styles from "./styles"
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
 import { faGear, faToolbox } from '@fortawesome/free-solid-svg-icons'
@@ -14,9 +14,13 @@ const CarItem = () => {
             />
             {/* header */}
             <View style={styles.header}>
-                <FontAwesomeIcon style={styles.icon} icon={faGear} size={24} />
+                <TouchableOpacity>
+                    <FontAwesomeIcon style={styles.icon} icon={faGear} size={24} />
+                </TouchableOpacity>
                 <Text style={styles.headerTitle}>Mobile</Text>
-                <FontAwesomeIcon style={styles.icon} icon={faToolbox} size={24} />
+                <TouchableOpacity>
+                    <FontAwesomeIcon style={styles.icon} icon={faToolbox} size={24} />
+                </TouchableOpacity>
             </View>
             {/* mileage */}
             <View style={styles.batterySection}>
