@@ -4,7 +4,7 @@ const styles = StyleSheet.create({
     carContainer: {
         width: "100%",
         height: "100%",
-        backgroundColor: "orange"
+        backgroundColor: "black"
     },
     header: {
         marginTop: 50,
@@ -14,6 +14,58 @@ const styles = StyleSheet.create({
         justifyContent: "space-between",
         alignItems: "center",
     },
+    headerTitle: {
+        color: "white",
+        fontSize: 16,
+        fontWeight: "bold",
+        alignItems: "center",
+        justifyContent: "center",
+        marginBottom: 10,
+    },
+    icon: {
+        color: "white"
+    },
+    backgroundImage: {
+        width: "100%",
+        height: "100%",
+        resizeMode: "cover",
+        position: "absolute", //puts the image behind everything else
+    },
+    batterySection: {
+        flexDirection: "row",
+        justifyContent: "center",
+        alignItems: "center",
+    },
+    batteryImage: {
+        height: 26,
+        width: 70,
+        marginRight: 12,
+    },
+    batteryText: {
+        color: "white",
+        fontSize: 35,
+        fontWeight: "bold",
+    },
+    statusText: {
+        fontSize: 20,
+        fontWeight: "bold",
+        color: "white",
+    },
+    status: {
+        alignItems: "center",
+    },
+    controls: {
+        flexDirection: "row",
+        justifyContent: "center",
+        marginTop: 175,
+    },
+    controlsButton: {
+        borderWidth: 1,
+        borderColor: "white",
+        borderRadius: 50,
+        padding: 18,
+        marginLeft: 25,
+    }
 });
 
 export default styles;
